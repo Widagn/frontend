@@ -1,0 +1,12 @@
+runtime: nodejs18
+
+handlers:
+  
+- url: /src
+  static_dir: src  # Ini untuk mengarahkan GAE ke direktori src jika CSS dan JS berada di sana
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+- url: /
+  static_files: index.html
+  upload: index.html
